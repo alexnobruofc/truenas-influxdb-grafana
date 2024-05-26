@@ -68,7 +68,7 @@
           "fontSize": "24px",
           "fontWeight": "normal"
         },
-        "timezone": "America/Toronto",
+        "timezone": "America/Sao_Paulo",
         "timezoneSettings": {
           "fontSize": "12px",
           "fontWeight": "normal",
@@ -258,7 +258,7 @@
       "pluginVersion": "7.1.4",
       "targets": [
         {
-          "alias": "da1",
+          "alias": "ada0",
           "groupBy": [
             {
               "params": [
@@ -273,9 +273,11 @@
               "type": "fill"
             }
           ],
-          "measurement": "da1",
+          "measurement": "ada0",
           "orderByTime": "ASC",
           "policy": "default",
+          "query": "SELECT * FROM \"ada0.temperature\"",
+          "rawQuery": false,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -301,7 +303,7 @@
           ]
         },
         {
-          "alias": "da2",
+          "alias": "ada1",
           "groupBy": [
             {
               "params": [
@@ -316,9 +318,11 @@
               "type": "fill"
             }
           ],
-          "measurement": "da2",
+          "measurement": "ada1",
           "orderByTime": "ASC",
           "policy": "default",
+          "query": "SELECT * FROM \"ada1.temperature\"",
+          "rawQuery": false,
           "refId": "B",
           "resultFormat": "time_series",
           "select": [
@@ -344,7 +348,7 @@
           ]
         },
         {
-          "alias": "da3",
+          "alias": "ada2",
           "groupBy": [
             {
               "params": [
@@ -359,9 +363,11 @@
               "type": "fill"
             }
           ],
-          "measurement": "da3",
+          "measurement": "ada2",
           "orderByTime": "ASC",
           "policy": "default",
+          "query": "SELECT * FROM \"ada2.temperature\"",
+          "rawQuery": false,
           "refId": "C",
           "resultFormat": "time_series",
           "select": [
@@ -387,7 +393,7 @@
           ]
         },
         {
-          "alias": "da4",
+          "alias": "ada3",
           "groupBy": [
             {
               "params": [
@@ -402,9 +408,11 @@
               "type": "fill"
             }
           ],
-          "measurement": "da4",
+          "measurement": "ada3",
           "orderByTime": "ASC",
           "policy": "default",
+          "query": "SELECT * FROM \"ada3.temperature\"",
+          "rawQuery": false,
           "refId": "D",
           "resultFormat": "time_series",
           "select": [
@@ -430,7 +438,7 @@
           ]
         },
         {
-          "alias": "da5",
+          "alias": "ada4",
           "groupBy": [
             {
               "params": [
@@ -445,9 +453,11 @@
               "type": "fill"
             }
           ],
-          "measurement": "da5",
+          "measurement": "ada4",
           "orderByTime": "ASC",
           "policy": "default",
+          "query": "SELECT * FROM \"ada4.temperature\"",
+          "rawQuery": false,
           "refId": "E",
           "resultFormat": "time_series",
           "select": [
@@ -473,7 +483,7 @@
           ]
         },
         {
-          "alias": "da6",
+          "alias": "ada5",
           "groupBy": [
             {
               "params": [
@@ -488,10 +498,12 @@
               "type": "fill"
             }
           ],
-          "measurement": "da6",
+          "measurement": "ada5",
           "orderByTime": "ASC",
           "policy": "default",
-          "refId": "F",
+          "query": "SELECT * FROM \"ada5.temperature\"",
+          "rawQuery": false,
+          "refId": "E",
           "resultFormat": "time_series",
           "select": [
             [
@@ -525,12 +537,12 @@
           "options": {
             "include": {
               "names": [
-                "da1",
-                "da2",
-                "da3",
-                "da4",
-                "da5",
-                "da6"
+                "ada0",
+                "ada1",
+                "ada2",
+                "ada3",
+                "ada4",
+                "ada5"
               ]
             }
           }
